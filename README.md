@@ -54,3 +54,7 @@ The EDA showed how highly unbalanced the target variable was which made a lot of
 The first modelling iterations produced high accuracy scores but very poor f1-scores as a result of the imbalanced target variables. There was however a remarkable improvement in the second modelling iteration after some advanced feature engineering. The `LightGBMClassifier` model produced the best f1-metric with 0.47 with hyperparameter tuning, which is still quite low given the "life or death" situation in the ICU ward. This can be improved upon by balancing the dataset using SMOTE in future modelling iterations.
 
 Survival in the ICU ward is challenging not only for those who are admitted, but also for those who have to constantly make decisions about the kind of interventions or care to give the patients in the ward. The goodnews is that with Machine Learning, we can try to predict the survival of the patients and hopefully make better decisions regarding the kind of care to administer. While this is not 100% certain, it is a step in the right direction to saving more lives. 
+
+## Future Work
+* In the future I would be looking to balance the target variable by using `SMOTE` as the imbalanced categories tend to produce poor evaluation metrics.
+* GridSearch for the best parameters and use them to carry out further modelling iterations.
